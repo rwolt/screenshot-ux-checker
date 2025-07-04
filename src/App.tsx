@@ -4,11 +4,11 @@ import UploadForm from "./components/UploadForm";
 function App() {
   return (
     <>
-      <h1 className="text-4xl font-bold font-sans">
-        Upload your design for feedback
-      </h1>
-      {/* <UploadForm />
-      <FeedbackPanel /> */}
+      <UploadForm />
+      <FeedbackPanel
+        heading="A few things that stood out"
+        bodyText="The header layout is clear, but the call-to-action button blends into the background. Consider increasing contrast or adding whitespace. The brand tone feels modern, but typography weights could be more consistent across sections."
+      />
     </>
   );
 }
